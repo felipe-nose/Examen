@@ -12,7 +12,7 @@ public static void main(String[] args) {
 
     
     do {System.out.println("selecione el producto que desea comprar:");
-    System.out.println("1.camisetas 2.pantalones 3.chaquetas 44.Terminar");
+    System.out.println("1.camisetas 2.pantalones 3.chaquetas 4.Terminar");
     venta=scanner.nextInt();
         
 if (venta==1) {
@@ -35,7 +35,7 @@ ACUMULADO1=ACUMULADO1+iva-descuento;
 
 
     System.out.println("Selecione el producto que desea agregar a la lista: ");
-    System.out.println("1.camisetas 2.pantalones 3.chaquetas 44.Terminar");
+    System.out.println("1.camisetas 2.pantalones 3.chaquetas 4.Terminar");
     venta=scanner.nextInt();
     Total=ACUMULADO1+ACUMULADO2+ACUMULADO3;
     iva=0;
@@ -63,7 +63,7 @@ if (venta==2) {
     System.out.println("Tiene un acumulado de: $"+ACUMULADO2);
 
     System.out.println("Selecione el producto que desea agregar a la lista: ");
-System.out.println("1.camisetas 2.pantalones 3.chaquetas 44.Terminar");
+System.out.println("1.camisetas 2.pantalones 3.chaquetas 4.Terminar");
 venta=scanner.nextInt();
 Total=ACUMULADO1+ACUMULADO2+ACUMULADO3;
 iva=0;
@@ -90,7 +90,7 @@ if (venta==3) {
         System.out.println("Tiene un acumulado de: $"+ACUMULADO3);
             
         System.out.println("Selecione el producto que desea agregar a la lista: ");
-        System.out.println("1.camisetas 2.pantalones 3.chaquetas 44.Terminar");
+        System.out.println("1.camisetas 2.pantalones 3.chaquetas 4.Terminar");
         venta=scanner.nextInt();
         Total=ACUMULADO1+ACUMULADO2+ACUMULADO3;
         iva=0;
@@ -100,8 +100,7 @@ if (venta==3) {
 
 Total=ACUMULADO1+ACUMULADO2+ACUMULADO3;
 
-    } while (venta==4);
-
+    } while (venta!=4);
     System.out.println("Total a pagar $"+Total);
 }
 
